@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Excel-CSV Converter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>File Converter</h1>
+
+    <h2>CSV to Excel</h2>
+    <form action="/convert/csv-to-excel" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".csv" required>
+        <button type="submit">Convert to Excel</button>
+    </form>
+
+    <h2>Excel to CSV</h2>
+    <form action="/convert/excel-to-csv" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".xls,.xlsx" required>
+        <button type="submit">Convert to CSV</button>
+    </form>
+</body>
+</html>

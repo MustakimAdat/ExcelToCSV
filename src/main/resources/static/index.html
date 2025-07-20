@@ -4,20 +4,83 @@
     <meta charset="UTF-8">
     <title>Excel-CSV Converter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: #444;
+            margin-bottom: 10px;
+        }
+
+        form {
+            margin-bottom: 25px;
+        }
+
+        input[type="file"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <h1>File Converter</h1>
+    <div class="container">
+        <h1>File Converter</h1>
 
-    <h2>CSV to Excel</h2>
-    <form action="/convert/csv-to-excel" method="post" enctype="multipart/form-data">
-        <input type="file" name="file" accept=".csv" required>
-        <button type="submit">Convert to Excel</button>
-    </form>
+        <h2>CSV to Excel</h2>
+        <form action="/convert/csv-to-excel" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".csv" required>
+            <button type="submit">Convert to Excel</button>
+        </form>
 
-    <h2>Excel to CSV</h2>
-    <form action="/convert/excel-to-csv" method="post" enctype="multipart/form-data">
-        <input type="file" name="file" accept=".xls,.xlsx" required>
-        <button type="submit">Convert to CSV</button>
-    </form>
+        <h2>Excel to CSV</h2>
+        <form action="/convert/excel-to-csv" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".xls,.xlsx" required>
+            <button type="submit">Convert to CSV</button>
+        </form>
+    </div>
 </body>
 </html>

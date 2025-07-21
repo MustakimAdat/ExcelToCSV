@@ -83,7 +83,7 @@ Feel free to use, modify, and share!
 
 ## 🙋‍♂️ Author
 
-Made with ❤️ by [Your Name](https://github.com/Mustakimadat)  
+Made with ❤️ by [Mustakim Adat](https://github.com/Mustakimadat)  
 For feedback or contributions, feel free to create a pull request or issue.
 
 

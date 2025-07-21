@@ -33,7 +33,8 @@ This is a simple Spring Boot web application that allows you to **convert Excel 
 
 ## 📁 Project Structure
 
-<img width="392" height="488" alt="image" src="https://github.com/user-attachments/assets/3088d1b4-482e-44a5-80e6-d1b92c76c4f4" />
+<img width="526" height="564" alt="image" src="https://github.com/user-attachments/assets/eca65c98-d356-4abd-938e-a5a031fc65a3" />
+
 
 
 
